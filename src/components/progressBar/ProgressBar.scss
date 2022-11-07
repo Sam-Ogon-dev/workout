@@ -1,0 +1,59 @@
+.progress-bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__timer {
+    position: absolute;
+    font-size: 28px;
+    top: 50%;
+  }
+
+  &__arc-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 222px;
+    height: 111px;
+    overflow: hidden;
+    clip-path: url(#clip);
+
+    &__progress-line {
+      position: absolute;
+      top: 100%;
+      height: 300px;
+      width: 300px;
+      animation-name: progress;
+      animation-duration: var(--duration);
+      transform-origin: top center;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+
+      @keyframes progress {
+        from {
+          transform: rotate(0);
+        }
+
+        to {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &__arc {
+      position: absolute;
+      width: 0;
+      height: 0;
+    }
+
+    &__bg {
+      width: 100%;
+      height: 100%;
+      background: #e7e7e7;
+    }
+  }
+}
+
+

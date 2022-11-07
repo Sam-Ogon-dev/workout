@@ -1,0 +1,56 @@
+@keyframes show-modal {
+  from {
+    transform: scale(0);
+    bottom: -500px;
+  }
+
+  to {
+    transform: scale(1);
+    bottom: 0;
+  }
+}
+
+
+.modal-bg {
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 100000;
+
+  &_hidden {
+    display: none;
+  }
+}
+
+.modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);
+  animation: show-modal;
+  animation-duration: 300ms;
+  overflow: auto;
+
+  &_full {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__header {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+  }
+}

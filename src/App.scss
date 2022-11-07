@@ -1,0 +1,34 @@
+@import "styles/default.scss";
+@import "styles/general.scss";
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: $base-color-1;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.43);
+  color: white;
+}
+
+.bottom-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: #181818;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.43);
+}
+
+.work-area {
+  display: flex;
+  flex-direction: column;
+  height: calc((100% - 50px) - 50px);
+  max-height: calc((100% - 50px) - 50px);
+  overflow-x: auto;
+}

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+$base-color-1: orange;
+$base-color-2: #8f8f8f;
+$base-color-3: white;
+
+.small-text {
+  font-size: 12px;
+  color: #8f8f8f;
+}
+
+.color-warning {
+  color: red;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.46);
+  padding: 10px;
+}
+
+.input-outline {
+  border: 1px solid $base-color-2;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  background: white;
+  transition: 150ms;
+  margin: 1px;
+
+  &:focus {
+    border: 1px solid $base-color-1;
+    outline: 2px solid $base-color-1;
+    //margin: 0;
+  }
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid $base-color-2;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #dedede;
+  transition: 150ms;
+  margin-bottom: 1px;
+
+  &:focus {
+    background: #ffffff;
+    border-bottom: 2px solid $base-color-1;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.27);
+    margin-bottom: 0px;
+  }
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.text-no-wrap {
+  white-space: nowrap;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
